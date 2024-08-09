@@ -14,4 +14,4 @@ jobs:
     with:
       appId: ${{ vars.APP_ID }}
     secrets:
-      GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
+      GH_RELEASE_TOKEN: ${{ secrets.GH_TOKEN }}
