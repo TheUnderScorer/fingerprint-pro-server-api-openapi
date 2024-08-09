@@ -1,11 +1,3 @@
-# [1.1.0](https://github.com/theunderscorer/fingerprint-pro-server-api-openapi/compare/v1.0.0...v1.1.0) (2024-08-09)
-
-
-### Features
-
-* make `tag` field optional for webhook ([b9b3efa](https://github.com/theunderscorer/fingerprint-pro-server-api-openapi/commit/b9b3efadd98eb86fcdba2b63cb4bef3f8276873f))
-* test release ([d41b2cd](https://github.com/theunderscorer/fingerprint-pro-server-api-openapi/commit/d41b2cd4a672552745049bff18ce5598a62c3654))
-
 # 1.0.0 (2024-08-09)
 
 
