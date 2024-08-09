@@ -3,7 +3,7 @@
     "main",
     "INTER-810-semantic-release"
   ],
-  "repositoryUrl": "https://github.com/fingerprintjs/fingerprint-pro-server-api-openapi",
+  "repositoryUrl": "https://github.com/theunderscorer/fingerprint-pro-server-api-openapi",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
