@@ -16,4 +16,5 @@ jobs:
       prepare-command: |
         pnpm build
     secrets:
-      GH_RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # TODO Need to get this secret from GH App, otherwise action on release won't trigger
+      GH_RELEASE_TOKEN: ${{ secrets.GH_TOKEN }}
