@@ -1,7 +1,7 @@
 name: Upload changesets
 on:
   release:
-    types: [published, released]
+    types: [published, released, created]
 
 jobs:
   upload-changesets:
