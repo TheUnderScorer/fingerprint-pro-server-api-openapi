@@ -6,13 +6,8 @@ const path = require('node:path');
 const humanId = require('human-id').humanId;
 
 module.exports = async ({ github, context }) => {
-  console.log({
-    github,
-    context,
-  });
-
   // Read all zipped changesets
-  const zips = glob.sync('changesets-*.zip');
+  const zips = glob.sync('.changeset/changesets-*.zip');
 
   // Root archive that will contain all zips contents
   const rootArchive = new zipLib.Zip();
