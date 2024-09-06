@@ -1,5 +1,11 @@
 # [1.1.0](https://github.com/theunderscorer/fingerprint-pro-server-api-openapi/compare/v1.0.0...v1.1.0) (2024-08-09)
 
+## 1.10.1
+
+### Patch Changes
+
+- d123d1a: Test patch change
+
 ## 1.10.0
 
 ### Minor Changes
