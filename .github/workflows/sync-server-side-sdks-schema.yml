@@ -21,7 +21,6 @@ jobs:
       generate-command: 'pnpm generateTypes'
       schema-path: resources/fingerprint-server-api.yaml
       examples-path: tests/mocked-responses-tests/mocked-responses-data
-      app-id: ${{ vars.APP_ID }}
       repository: fingerprintjs-pro-server-api-node-sdk
       pre-release: ${{ inputs.pre-release }}
       ignored-scopes: visitors-api
