@@ -22,12 +22,23 @@ jobs:
       - name: 'Build schemas'
         run: pnpm build
 
-      - name: Upload files to a GitHub release
+      - name: 'Zip examples'
+        run: zip -r examples.zip examples
+
+      - name: Upload schemas to a GitHub release
         uses: svenstaro/upload-release-action@04733e069f2d7f7f0b4aebc4fbdbce8613b03ccd
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: 'dist/schemas/*.yaml'
           file_glob: true
           tag: ${{ github.event.release.tag_name }}
+
+      - name: Upload examples to a GitHub release
+        uses: svenstaro/upload-release-action@04733e069f2d7f7f0b4aebc4fbdbce8613b03ccd
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: examples.zip
+          tag: ${{ github.event.release.tag_name }}
+
 
 
