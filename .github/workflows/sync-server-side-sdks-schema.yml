@@ -22,7 +22,7 @@ jobs:
       schema-path: resources/fingerprint-server-api.yaml
       examples-path: tests/mocked-responses-tests/mocked-responses-data
       repository: fingerprintjs-pro-server-api-node-sdk
-      pre-release: ${{ inputs.pre-release }} == 'true'
+      pre-release: ${{ inputs.pre-release }} == 'true' && true || false
       ignored-scopes: visitors-api
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
