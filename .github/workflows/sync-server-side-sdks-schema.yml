@@ -9,6 +9,7 @@ on:
         description: 'Whether to create a pre-release first for the SDKs'
         required: false
         default: false
+        type: boolean
 name: Sync Server-Side SDKs schema
 jobs:
   sync-node:
@@ -22,7 +23,7 @@ jobs:
       schema-path: resources/fingerprint-server-api.yaml
       examples-path: tests/mocked-responses-tests/mocked-responses-data
       repository: fingerprintjs-pro-server-api-node-sdk
-
+      pre-release: ${{ inputs.pre-release }}
       ignored-scopes: visitors-api
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
