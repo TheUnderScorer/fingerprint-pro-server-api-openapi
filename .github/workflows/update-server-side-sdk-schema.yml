@@ -110,6 +110,7 @@ jobs:
           githubToken: ${{ secrets.TOKEN }}
           preRelease: '${{ inputs.pre-release }}'
           ignoredScopes: ${{ inputs.ignored-scopes }}
+          openApiRepository: 'TheUnderScorer/fingerprint-pro-server-api-openapi'
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5
