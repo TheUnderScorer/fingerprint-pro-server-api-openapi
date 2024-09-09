@@ -101,7 +101,7 @@ jobs:
           git config --global --add --bool push.autoSetupRemote true
 
       - name: Update schema
-        uses: fingerprintjs/dx-team-toolkit/.github/actions/update-sdk-schema@feature/INTER-866-parse-changesets
+        uses: fingerprintjs/dx-team-toolkit/.github/actions/update-sdk-schema@feature/INTER-870-multiple-releases
         with:
           schemaPath: ${{ inputs.schema-path }}
           examplesPath: ${{ inputs.examples-path }}
